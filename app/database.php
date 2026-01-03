@@ -10,9 +10,9 @@ return [
     // 用户名
     'username'        => 'root',
     // 密码
-    'password'        => '',
+    'password'        => 'root',
     // 端口
-    'hostport'        => '3306',
+    'hostport'        => '3307',
     // 连接dsn
     'dsn'             => '',
     // 数据库连接参数
