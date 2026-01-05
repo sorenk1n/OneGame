@@ -367,7 +367,7 @@ class Query
                         $seq = (ord(substr($type($value), 0, 1)) % $rule['num']) + 1;
                     } else {
                         // 按照字段的首字母的值分表
-                        $seq = (ord($value{0}) % $rule['num']) + 1;
+                        $seq = (ord($value[0]) % $rule['num']) + 1;
                     }
             }
             return $this->getTable() . '_' . $seq;
@@ -466,6 +466,7 @@ class Query
             } else {
                 $resultSet = $pdo->fetchAll(PDO::FETCH_ASSOC);
                 if ($resultSet) {
+                    $result = [];
                     $fields = array_keys($resultSet[0]);
                     $count  = count($fields);
                     $key1   = array_shift($fields);
@@ -701,7 +702,9 @@ class Query
     {
         // 传入的表名为数组
         if (is_array($join)) {
-            list($table, $alias) = each($join);
+            foreach ($join as $table => $alias) {
+                break;
+            }
         } else {
             $join = trim($join);
             if (false !== strpos($join, '(')) {

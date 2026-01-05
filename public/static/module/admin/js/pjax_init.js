@@ -16,7 +16,7 @@ $(document).on('pjax:complete', function() {
 
     if (ob_title_hidden != null && ob_title_hidden != '') {
         
-         document.title =  'OneGame | ' + ob_title_hidden;
+         document.title =  '方穗娱乐 | ' + ob_title_hidden;
     }
 
     var $checkboxAll = $(".js-checkbox-all"),
@@ -272,3 +272,4 @@ var searchFormUrl = function (obj) {
     
     return url;
 };
+

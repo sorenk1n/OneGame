@@ -6,7 +6,7 @@
             {volist name="data['gift_list']" id="v"}
                 <li>
                     <a class="g_pic" href="{:url('gift/details', array('id' => $v['id']))}">
-                        <img alt="{$v.gift_name}" src="{$v.game_head|get_picture_url}" />
+                        <img alt="{$v.gift_name}" src="{$v.game_head|get_picture_url}" loading="lazy" decoding="async" />
                         <i></i>
                     </a>
                     <div class="g_dec g_dec1">

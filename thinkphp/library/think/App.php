@@ -256,9 +256,19 @@ class App
     private static function getParamValue($param, &$vars, $type)
     {
         $name  = $param->getName();
-        $class = $param->getClass();
-        if ($class) {
-            $className = $class->getName();
+        $className = null;
+        if (PHP_VERSION_ID < 80000) {
+            $class = $param->getClass();
+            if ($class) {
+                $className = $class->getName();
+            }
+        } else {
+            $typeInfo = $param->getType();
+            $className = ($typeInfo instanceof \ReflectionNamedType && !$typeInfo->isBuiltin())
+                ? $typeInfo->getName()
+                : null;
+        }
+        if ($className) {
             $bind      = Request::instance()->$name;
             if ($bind instanceof $className) {
                 $result = $bind;

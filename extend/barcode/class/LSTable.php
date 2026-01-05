@@ -506,10 +506,9 @@ class LSTable {
 				for( $i = 0; $i < $this->numRows; $i++ ) {
 					$temp_text = array();
 					$temp_attributes = array();
-					reset($this->text[ $i ]);
-					while ( list( $key, ) = each( $this->text[ $i ] ) ) {
+					foreach ($this->text[ $i ] as $key => $value) {
 						if( $key != $col ) {
-							$temp_text[] = $this->text[ $i ][ $key ];
+							$temp_text[] = $value;
 							$temp_attributes[] = $this->cellsAttributes[ $i ][ $key ];
 						}
 					}

@@ -12,7 +12,7 @@ class tpl_LS {
 		$code = '';
 		$found_class = false;
 		reset( $attributes );
-		while( list( $key, $value ) = each( $attributes ) ) {
+		foreach ($attributes as $key => $value) {
 			$code .= ' '.$key.'="'.$value.'"';
 			if( $key == 'class' )
 				$found_class = true;
@@ -29,8 +29,9 @@ class tpl_LS {
 	function __cell_start ( $text, $attributes ) {
 		$code = '';
 		reset( $attributes );
-		while( list( $key, $value ) = each( $attributes ) )
+		foreach ($attributes as $key => $value) {
 			$code .= ' '.$key.'="'.$value.'"';
+		}
 		echo '<td'.$code.'>'.$text;
 	}
 
@@ -59,8 +60,9 @@ class tpl_BLANK {
 	function __cell_start ( $text, $attributes ) {
 		$code = '';
 		reset( $attributes );
-		while( list( $key, $value ) = each( $attributes ) )
+		foreach ($attributes as $key => $value) {
 			$code .= ' '.$key.'="'.$value.'"';
+		}
 		echo '<td'.$code.'>'.$text;
 	}
 

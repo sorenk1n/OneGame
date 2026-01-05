@@ -6,7 +6,9 @@
         <ul>
             {volist name="data['recommend_game_list']" id="v"}
                 <li>
-                    <a href="{:url('website/index', array('game_code' => $v['game_code']))}" target="_blank"> <img alt="{$v.game_name}" src="{$v.game_cover|get_picture_url}"/> </a>
+                    <a href="{:url('website/index', array('game_code' => $v['game_code']))}" target="_blank">
+                        <img alt="{$v.game_name}" src="{$v.game_cover|get_picture_url}" loading="lazy" decoding="async" />
+                    </a>
                     <div class="only_txt">
                         <div class="only_name">
                             <h2>{$v.game_name}</h2>

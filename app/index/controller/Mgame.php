@@ -23,7 +23,7 @@ class Mgame extends IndexBase
         
         set_url();
         
-        $this->setTitle('OneGame - 手游');
+        $this->setTitle('方穗娱乐 - 手游');
         
         $this->assign('data', $this->logicMgame->getGameList($this->param));
         
@@ -40,7 +40,7 @@ class Mgame extends IndexBase
         
         !is_login() && $this->redirect('login/login');
         
-        $this->setTitle('OneGame - 手游');
+        $this->setTitle('方穗娱乐 - 手游');
         
         $this->assign('play_url', $this->logicMgame->play($gid));
         
@@ -62,3 +62,4 @@ class Mgame extends IndexBase
         $this->logicMgame->download($id);
     }
 }
+

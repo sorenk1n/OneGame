@@ -143,6 +143,10 @@ class Menu extends AdminBase
         $map['module'] = MODULE_NAME;
                 
         $menu_info = $this->getMenuInfo($map);
+
+        if (empty($menu_info) || empty($menu_info['id'])) {
+            return $menu_view;
+        }
         
         // 获取自己及父菜单列表
         $this->getParentMenuList($menu_info['id']);
@@ -166,6 +170,10 @@ class Menu extends AdminBase
     {
         
         $menu_info = $this->getMenuInfo(['id' => $menu_id]);
+
+        if (empty($menu_info)) {
+            return;
+        }
         
         !empty($menu_info['pid']) && $this->getParentMenuList($menu_info['pid']);
         

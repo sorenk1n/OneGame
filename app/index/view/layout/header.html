@@ -4,7 +4,7 @@
 {assign name="action" value=":request()->action()" /}
 
 <div class="header">
-    <div class="w1200"> <a class="logo" href="{:url('index/index')}"> <img src="{:get_picture_url(config('web_site_logo'))}" /> </a>
+    <div class="w1200"> <a class="logo" href="{:url('index/index')}"> <img src="/fangsui.png" /> </a>
     <ul class="nav">
         
       <li {if condition="($controller == 'Index') AND ($action == 'index')"}  class="on" {/if} > <a href="{:url('index/index')}">首页</a> </li>

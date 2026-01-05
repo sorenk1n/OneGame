@@ -2,7 +2,7 @@
 include 'merchantProperties.php';
 include 'HttpClient.class.php';
  	#时间设置
-	date_default_timezone_set('PRC');
+	date_default_timezone_set('Asia/Shanghai');
 	#支付请求、 退款查询接口地址
 	$reqURL_onLine = "https://www.yeepay.com/app-merchant-proxy/node";
 	#订单查询，退款、撤销
@@ -33,14 +33,11 @@ include 'HttpClient.class.php';
         {
                 $text="";
                 
-                while (list($key,$value) = each($data))
-                {
+                foreach ($data as $key => $value) {
                     if(isset($key) && $key!="hmac" && $key!="hmac_safe") 
                     {   
-
                         $text .=    $value;
                     }
-
                 }
 
                 return HmacMd5($text, $merchantKey);
@@ -57,14 +54,11 @@ include 'HttpClient.class.php';
         {
                 $text="";
                 
-                while (list($key,$value) = each($data))
-                {
+                foreach ($data as $key => $value) {
                     if( $key!="hmac" && $key!="hmac_safe" && $value !=null)
                     {
-
                         $text .=  $value."#" ;
                     }
-
                 }
                 $text1= rtrim( trim($text), '#' );
 

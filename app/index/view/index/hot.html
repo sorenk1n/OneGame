@@ -6,7 +6,7 @@
                     {if condition="$k < 7"}  
                         <li>
                             <a class="game_pic" href="/g/{$v['game_code']}" target="_blank">
-                                <img src="{$v.game_cover|get_picture_url}" alt="{$v.game_name}"/>
+                                <img src="{$v.game_cover|get_picture_url}" alt="{$v.game_name}" loading="lazy" decoding="async" />
                             </a>
                             <h4> 
                                 <a href="/g/{$v['game_code']}" target="_blank">{$v.game_name}</a>

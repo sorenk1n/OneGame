@@ -28,6 +28,9 @@ class IndexBase extends LogicBase
         $cache_key = 'cache_index_common_data';
         
         $data = cache($cache_key);
+        if (!is_array($data)) {
+            $data = [];
+        }
         
         if (empty($data)) {
             
