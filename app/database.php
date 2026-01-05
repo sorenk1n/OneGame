@@ -8,11 +8,11 @@ return [
     // 数据库名
     'database'        => 'onegame',
     // 用户名
-    'username'        => 'root',
+    'username'        => 'katydid',
     // 密码
-    'password'        => 'root',
+    'password'        => 'katydid',
     // 端口
-    'hostport'        => '3307',
+    'hostport'        => '3306',
     // 连接dsn
     'dsn'             => '',
     // 数据库连接参数
