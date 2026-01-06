@@ -173,6 +173,10 @@ class InitBase
         $cache_key = 'cache_init_config_list';
         
         $config_array = cache($cache_key);
+
+        if (!is_array($config_array)) {
+            $config_array = [];
+        }
         
         if (empty($config_array)) {
             
