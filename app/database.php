@@ -8,9 +8,9 @@ return [
     // 数据库名
     'database'        => 'onegame',
     // 用户名
-    'username'        => 'root',
+    'username'        => 'katydid',
     // 密码
-    'password'        => '123456',
+    'password'        => 'katydid',
     // 端口
     'hostport'        => '3306',
     // 连接dsn
