@@ -7,15 +7,11 @@
         <a href="{:url('article/details', array('id' => config('single_article')['cooperation']))}">商务合作</a>
         <a href="{:url('article/details', array('id' => config('single_article')['tutelage']))}">家长监护</a>
     </div>
-        <div class="f_links"> 友情链接：
-        {volist name="sys_common_data['link_list']" id="v"}
-            <a href="{$v.url}" target="_blank">{$v.name}</a>
-        {/volist}
-        </div>
+        
       
         <div class="f_logo">
             
-            网络文化经营许可证：{:config('site_culture')} &nbsp; |  &nbsp; 增值电信业务许可证：{:config('site_telecom')} &nbsp; |  &nbsp; 网站备案号：<a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">粤ICP备2024323120号-2</a>
+            网站备案号：<a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">粤ICP备2024323120号-2</a>
             
             <div class="clear"></div>
         </div>

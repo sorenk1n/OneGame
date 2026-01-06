@@ -28,6 +28,10 @@ class Index extends IndexBase
         $cache_key = 'cache_index_index_data';
         
         $data = cache($cache_key);
+
+        if (!is_array($data)) {
+            $data = [];
+        }
         
         if (empty($data)) {
 

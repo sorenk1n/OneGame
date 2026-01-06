@@ -466,6 +466,7 @@ class Query
             } else {
                 $resultSet = $pdo->fetchAll(PDO::FETCH_ASSOC);
                 if ($resultSet) {
+                    $result = [];
                     $fields = array_keys($resultSet[0]);
                     $count  = count($fields);
                     $key1   = array_shift($fields);

@@ -26,6 +26,10 @@ class Website extends IndexBase
         $cache_key = 'cache_website_common_data_game_code_' . $game_code;
         
         $data = cache($cache_key);
+
+        if (!is_array($data)) {
+            $data = [];
+        }
         
         if (empty($data)) {
             

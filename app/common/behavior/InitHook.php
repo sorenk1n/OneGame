@@ -28,6 +28,10 @@ class InitHook
         $cache_key = 'cache_init_hook_list';
         
         $addon_list = cache($cache_key);
+
+        if (!is_array($addon_list)) {
+            $addon_list = [];
+        }
         
         if (empty($addon_list)) {
             
