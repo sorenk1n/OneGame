@@ -7,8 +7,8 @@
  *
  *--------------------------------------------------------------------
  * Revision History
- * v2.00	23 apr	2008	Jean-Sébastien Goupil	New Version Update
- * v1.2.1	27 jun	2005	Jean-Sébastien Goupil	New functionality
+ * v2.00	23 apr	2008	Jean-Sï¿½bastien Goupil	New Version Update
+ * v1.2.1	27 jun	2005	Jean-Sï¿½bastien Goupil	New functionality
  * V1.00	17 jun	2004	Jean-Sebastien Goupil
  *--------------------------------------------------------------------
  * $Id: BCGColor.php,v 1.5 2008/07/10 04:23:26 jsgoupil Exp $
@@ -38,7 +38,7 @@ class BCGColor {
 			$this->g = intval($args[1]);
 			$this->b = intval($args[2]);
 		} elseif ($c === 1) {
-			if (is_string($args[0]) && strlen($args[0]) === 7 && $args[0]{0} === '#') {		// Hex Value in String
+			if (is_string($args[0]) && strlen($args[0]) === 7 && $args[0][0] === '#') {		// Hex Value in String
 				$this->r = intval(substr($args[0], 1, 2), 16);
 				$this->g = intval(substr($args[0], 3, 2), 16);
 				$this->b = intval(substr($args[0], 5, 2), 16);
@@ -86,7 +86,7 @@ class BCGColor {
 	/**
 	 * Returns the int value for PHP color
 	 *
-	 * @param resource $im
+	 * @param GdImage|resource $im
 	 * @return int
 	 */
 	public function allocate(&$im) {
@@ -144,3 +144,4 @@ class BCGColor {
 	}
 };
 ?>
+
