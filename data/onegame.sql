@@ -4,7 +4,7 @@ Navicat MySQL Data Transfer
 Source Server         : localhost_link
 Source Server Version : 50714
 Source Host           : localhost:3306
-Source Database       : onegame
+Source Database       : ErgateGame
 
 Target Server Type    : MYSQL
 Target Server Version : 50714
@@ -13,6 +13,7 @@ File Encoding         : 65001
 Date: 2019-03-20 17:42:58
 */
 
+SET NAMES utf8;
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
@@ -151,7 +152,7 @@ CREATE TABLE `ob_article` (
 -- ----------------------------
 -- Records of ob_article
 -- ----------------------------
-INSERT INTO `ob_article` VALUES ('1', '1', '1', '关于OneGame', '7', '关于OneGame', '1', '0', '0', '', '1525244213', '1545997631', '1', '0');
+INSERT INTO `ob_article` VALUES ('1', '1', '1', '关于ErgateGame', '7', '关于ErgateGame', '1', '0', '0', '', '1525244213', '1545997631', '1', '0');
 INSERT INTO `ob_article` VALUES ('2', '1', '1', '联系我们', '7', '联系我们', '2', '0', '0', '', '1525244237', '1545997645', '1', '0');
 INSERT INTO `ob_article` VALUES ('3', '11', '1', '诚聘英才', '7', '诚聘英才', '3', '0', '0', '', '1525244262', '1525244262', '1', '0');
 INSERT INTO `ob_article` VALUES ('4', '1', '1', '商务合作', '7', '商务合作', '4', '0', '0', '', '1525244278', '1545997666', '1', '0');
@@ -159,18 +160,18 @@ INSERT INTO `ob_article` VALUES ('5', '11', '1', '家长监护', '7', '家长监
 INSERT INTO `ob_article` VALUES ('6', '1', '1', '挂机辅助', '12', '挂机辅助', '6', '0', '0', '', '1525314199', '1546001775', '1', '0');
 INSERT INTO `ob_article` VALUES ('7', '13', '1', '交易系统', '12', '交易系统', '7', '0', '0', '', '1525315870', '1525315870', '1', '0');
 INSERT INTO `ob_article` VALUES ('8', '13', '1', '锻造系统', '12', '锻造系统', '8', '0', '0', '', '1525315913', '1525946359', '1', '0');
-INSERT INTO `ob_article` VALUES ('10', '24', '59748', 'OneGame《XXX》6月2日14：50点双线71服开启', '10', '', '1', '0', '0', '', '1527854400', '1530251095', '1', '0');
-INSERT INTO `ob_article` VALUES ('11', '24', '59748', 'OneGame《XXX》6月3日10：00点双线72服开启', '10', '', '2', '0', '0', '', '1527940800', '1530251117', '1', '0');
-INSERT INTO `ob_article` VALUES ('12', '24', '59748', 'OneGame《XXX》6月5日14：50点双线73服开启', '10', '', '3', '0', '0', '', '1528113600', '1530251151', '1', '0');
+INSERT INTO `ob_article` VALUES ('10', '24', '59748', 'ErgateGame《XXX》6月2日14：50点双线71服开启', '10', '', '1', '0', '0', '', '1527854400', '1530251095', '1', '0');
+INSERT INTO `ob_article` VALUES ('11', '24', '59748', 'ErgateGame《XXX》6月3日10：00点双线72服开启', '10', '', '2', '0', '0', '', '1527940800', '1530251117', '1', '0');
+INSERT INTO `ob_article` VALUES ('12', '24', '59748', 'ErgateGame《XXX》6月5日14：50点双线73服开启', '10', '', '3', '0', '0', '', '1528113600', '1530251151', '1', '0');
 INSERT INTO `ob_article` VALUES ('13', '24', '59748', '6月5日《XXX》合区公告', '17', '', '1', '0', '0', '', '1528113600', '1528926217', '1', '0');
 INSERT INTO `ob_article` VALUES ('14', '24', '59748', '6月6号《XXX》全民斗笠活动来袭~', '10', '', '2', '0', '0', '', '1528200000', '1528926314', '1', '0');
-INSERT INTO `ob_article` VALUES ('15', '24', '59748', 'OneGame《XXX》6月7日14：50点双线74服开启', '10', '', '4', '0', '0', '', '1528286400', '1530251187', '1', '0');
-INSERT INTO `ob_article` VALUES ('16', '24', '59748', 'OneGame《XXX》6月9日14：50点双线75服开启', '10', '', '5', '0', '0', '', '1528459200', '1530251206', '1', '0');
-INSERT INTO `ob_article` VALUES ('17', '24', '59748', 'OneGame《XXX》6月11日14：50点双线76服开启', '10', '', '6', '0', '0', '', '1528632000', '1530251242', '1', '0');
+INSERT INTO `ob_article` VALUES ('15', '24', '59748', 'ErgateGame《XXX》6月7日14：50点双线74服开启', '10', '', '4', '0', '0', '', '1528286400', '1530251187', '1', '0');
+INSERT INTO `ob_article` VALUES ('16', '24', '59748', 'ErgateGame《XXX》6月9日14：50点双线75服开启', '10', '', '5', '0', '0', '', '1528459200', '1530251206', '1', '0');
+INSERT INTO `ob_article` VALUES ('17', '24', '59748', 'ErgateGame《XXX》6月11日14：50点双线76服开启', '10', '', '6', '0', '0', '', '1528632000', '1530251242', '1', '0');
 INSERT INTO `ob_article` VALUES ('18', '24', '59748', '6月12日《XXX》合区公告', '17', '', '7', '0', '0', '', '1528718400', '1528926554', '1', '0');
-INSERT INTO `ob_article` VALUES ('19', '24', '59748', 'OneGame《XXX》 6月13日14：50点双线77服开启', '10', '', '8', '0', '0', '', '1528804800', '1530251265', '1', '0');
+INSERT INTO `ob_article` VALUES ('19', '24', '59748', 'ErgateGame《XXX》 6月13日14：50点双线77服开启', '10', '', '8', '0', '0', '', '1528804800', '1530251265', '1', '0');
 INSERT INTO `ob_article` VALUES ('20', '24', '59748', '6月13日《XXX》全民宝石活动来袭~', '10', '', '3', '0', '0', '', '1528804800', '1529495939', '1', '0');
-INSERT INTO `ob_article` VALUES ('21', '24', '59748', 'OneGame《XXX》平台升级更新', '10', '', '9', '0', '0', '', '1528891200', '1528927191', '1', '0');
+INSERT INTO `ob_article` VALUES ('21', '24', '59748', 'ErgateGame《XXX》平台升级更新', '10', '', '9', '0', '0', '', '1528891200', '1528927191', '1', '0');
 INSERT INTO `ob_article` VALUES ('22', '24', '59748', '《XXX》充值回馈', '7', '', '10', '0', '0', '', '1515672000', '1528927279', '1', '0');
 
 -- ----------------------------
@@ -295,9 +296,9 @@ CREATE TABLE `ob_config` (
 -- ----------------------------
 -- Records of ob_config
 -- ----------------------------
-INSERT INTO `ob_config` VALUES ('1', 'seo_title', '1', '网站标题', '1', '', '网站标题前台显示标题，优先级低于SEO模块', '1378898976', '1552106301', '1', '基于OneBase开发的游戏联运平台OneGame', '3');
-INSERT INTO `ob_config` VALUES ('2', 'seo_description', '2', '网站描述', '1', '', '网站搜索引擎描述，优先级低于SEO模块', '1378898976', '1552106301', '1', 'OneGame 致力于打造国内最强页游联运平台', '100');
-INSERT INTO `ob_config` VALUES ('3', 'seo_keywords', '2', '网站关键字', '1', '', '网站搜索引擎关键字，优先级低于SEO模块', '1378898976', '1552106301', '1', '页游联运平台,OneGame,网页游戏平台,OneBase', '99');
+INSERT INTO `ob_config` VALUES ('1', 'seo_title', '1', '网站标题', '1', '', '网站标题前台显示标题，优先级低于SEO模块', '1378898976', '1552106301', '1', '基于OneBase开发的游戏联运平台ErgateGame', '3');
+INSERT INTO `ob_config` VALUES ('2', 'seo_description', '2', '网站描述', '1', '', '网站搜索引擎描述，优先级低于SEO模块', '1378898976', '1552106301', '1', 'ErgateGame 致力于打造国内最强页游联运平台', '100');
+INSERT INTO `ob_config` VALUES ('3', 'seo_keywords', '2', '网站关键字', '1', '', '网站搜索引擎关键字，优先级低于SEO模块', '1378898976', '1552106301', '1', '页游联运平台,ErgateGame,网页游戏平台,OneBase', '99');
 INSERT INTO `ob_config` VALUES ('9', 'config_type_list', '3', '配置类型列表', '3', '', '主要用于数据解析和页面表单的生成', '1378898976', '1528923967', '1', '0:数字\r\n1:字符\r\n2:文本\r\n3:数组\r\n4:枚举\r\n5:图片\r\n6:文件\r\n7:富文本\r\n8:单选\r\n9:多选\r\n10:日期\r\n11:时间\r\n12:颜色', '100');
 INSERT INTO `ob_config` VALUES ('20', 'config_group_list', '3', '配置分组', '3', '', '配置分组', '1379228036', '1528923967', '1', '1:基础\r\n2:数据\r\n3:系统\r\n4:API\r\n5:业务\r\n6:客服', '100');
 INSERT INTO `ob_config` VALUES ('25', 'list_rows', '0', '每页数据记录数', '2', '', '数据每页显示记录数', '1379503896', '1528962913', '1', '15', '10');
@@ -330,11 +331,11 @@ INSERT INTO `ob_config` VALUES ('72', 'web_site_logo', '5', '网站LOGO', '1', '
 INSERT INTO `ob_config` VALUES ('73', 'service_qq', '1', '客服QQ', '6', '', '', '1520050246', '1552469091', '1', '3162875', '0');
 INSERT INTO `ob_config` VALUES ('74', 'service_business_qq', '1', '商务QQ', '6', '', '', '1520050307', '1528931777', '1', '3162875', '0');
 INSERT INTO `ob_config` VALUES ('75', 'site_icp', '1', '网站备案号', '1', '', '', '1520069355', '1552106301', '1', '鄂ICP备XXXXXX号', '0');
-INSERT INTO `ob_config` VALUES ('76', 'site_copyright', '1', '网站版权', '1', '', '', '1520069417', '1552106301', '1', 'Copyright  2018  OneGame 版权所有', '0');
+INSERT INTO `ob_config` VALUES ('76', 'site_copyright', '1', '网站版权', '1', '', '', '1520069417', '1552106301', '1', 'Copyright  2018  ErgateGame 版权所有', '0');
 INSERT INTO `ob_config` VALUES ('77', 'site_licence', '5', '网络文化经营许可证', '1', '', '网络文化经营许可证', '1520069756', '1552106301', '1', '210', '121');
 INSERT INTO `ob_config` VALUES ('78', 'site_qrcode', '5', '网站浮动二维码', '1', '', '', '1520070135', '1545995394', '1', '210', '122');
 INSERT INTO `ob_config` VALUES ('82', 'site_culture', '1', '网络文化经营许可证', '1', '', '', '1525244774', '1552106301', '1', '鄂网文 [2017] XXXXX-XXX号', '0');
-INSERT INTO `ob_config` VALUES ('79', 'web_site_name', '1', '网站名称', '1', '', '', '1521601709', '1552106301', '1', 'OneGame', '0');
+INSERT INTO `ob_config` VALUES ('79', 'web_site_name', '1', '网站名称', '1', '', '', '1521601709', '1552106301', '1', 'ErgateGame', '0');
 INSERT INTO `ob_config` VALUES ('80', 'auth_group_id_operation', '0', '公司运营权限组ID', '5', '', '', '1524129592', '1528934088', '1', '6', '0');
 INSERT INTO `ob_config` VALUES ('81', 'service_email', '1', '投诉邮箱', '6', '', '', '1524306415', '1552469091', '1', 'service@xxxxx.com', '0');
 INSERT INTO `ob_config` VALUES ('83', 'site_telecom', '1', '增值电信业务许可证', '1', '', '', '1525244802', '1552106301', '1', '鄂B2-XXXXXXXX', '0');
